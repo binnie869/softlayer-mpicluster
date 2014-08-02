@@ -15,9 +15,11 @@ To create a new cluster, run
 ```
 
 where mpimaster is the hostname for the master node
-mpislave is the base hostname for the slave nodes (actual hostnames will be mpislave1, mipslave2...)
-4 is the number of the slave nodes
-mpiclusterkey is the unique name that the script should use for this cluster. Note that it'll create the key with this name on the local disk and also insert it into SL, so that the new machines will be provisioned with it.
+, mpislave is the base hostname for the slave nodes (actual hostnames will be mpislave1, mipslave2...), dima.com is the domain, 
+4 is the number of the slave nodes, 
+mpiclusterkey is the unique name that the script should use for this cluster. 
+
+Note that it'll create the key with this name on the local disk and also insert it into SL, so that the new machines will be provisioned with it.
 
 The structure of the code is not complicated.  It first creates the key, then uses this key to kick off provisioning for the master and slave nodes.  Once all nodes are provisions, it starts installing software running setup_nodes.sh script. the setup_node.sh script contains common elements that needs to be done on all nodes.  setup_nodes.sh, towards the end, adds some operations that are specific to master or slave nodes.
 
