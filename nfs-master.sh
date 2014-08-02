@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # configure node as NFS master
 # requires `mpi_hosts` file with list of hosts to share NFS
@@ -27,4 +27,3 @@ done
 exportfs -a
 
 service nfs-kernel-server restart
-

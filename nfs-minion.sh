@@ -11,4 +11,3 @@ mount $MASTER_IP:/home/$USER /home/$USER
 cat >> /etc/fstab << EOF
 $MASTER_IP:/home/$USER    /home/$USER   nfs auto,noatime,nolock,bg,nfsvers=4,intr,tcp,actimeo=1800 0 0
 EOF
-
