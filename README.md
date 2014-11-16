@@ -7,7 +7,7 @@ what is minimally required for making a cluster.
 
 At this point, this is a fully working, albeit somewhat hacked together, set of scripts.
 
-Ensure you have the SoftLayer API installed on your machine, then issue the git pull.
+Ensure you have the SoftLayer CLI installed on your machine, then issue the git pull.
 
 To create a new cluster, run
 ```
